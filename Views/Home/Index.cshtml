@@ -2,7 +2,84 @@
     ViewData["Title"] = "Matt Nyce";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to My Site</h1>
-    <p>This site allows for modification of inventory.</p>
-</div>
+<style>
+    body {
+        font-size: 1rem;
+        height: 100%;
+    }
+
+    .gradient {
+        background: rgb(165,0,201);
+        background: linear-gradient(0deg, rgba(165,0,201,1) 0%, rgba(0,0,0,1) 100%);
+    }
+
+    .page-header {
+        margin-top: 4rem;
+        font-size: 1.25rem;
+        color: #fff;
+    }
+
+    .purpose {
+        color: #fff
+    }
+
+    .fade {
+        opacity: 1;
+    }
+
+</style>
+<header class="page-header gradient">
+    <div class="container pt-3 fade">
+        <div class="row align-items-center justify-content-center pt-5" id="show1">
+            <div class="col-md-6 w-50">
+                <h2>Get an edge on the competition</h2>
+                <p>
+                    Each PC is hand crafted by one of our
+                    dedicated builders to give the best to
+                    each and every MU Designs gamer. Feel the
+                    power at your fingertips. Don't hesitate, get MU today.
+                </p>
+            </div>
+            <div class="col-md-6 w-50"><img class="img-fluid" src="~/images/gamingpc.png" alt="Gaming PC"/></div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,133.3C96,171,192,245,288,240C384,235,480,149,576,144C672,139,768,213,864,224C960,235,1056,181,1152,181.3C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</header>
+
+<section class="computers">
+    <div class="container text-center">
+        <div class="row g-5">
+            <div class="col-md-4 pb-3 fade">
+                <img class="img-fluid" src="~/images/pc_1.png" alt="MU Starter" />
+                <p><h2>MU Starter</h2></p>
+            </div>
+            <div class="col-md-4 pb-3 fade">
+                <img class="img-fluid" src="~/images/pc_3.png" alt="MU Gamer" />
+                <p><h2>MU Gamer</h2></p>
+            </div>
+            <div class="col-md-4 pb-3 fade">
+                <img class="img-fluid" src="~/images/pc_2.png" alt="MU Ultimate" />
+                <p><h2>MU Ultimate</h2></p>
+            </div>
+        </div>
+    </div>  
+</section>
+
+<section class="purpose gradient">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L48,117.3C96,107,192,85,288,112C384,139,480,213,576,208C672,203,768,117,864,112C960,107,1056,181,1152,202.7C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <div class="container pb-5 fade">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-12">
+                <h1 class="my-3">Purpose</h1>
+
+                <p class="my-4">
+                    This website was built by Matt Nyce. The purpose of this website is to demonstrate the knowledge learned in
+                    CIS407A at Devry University. This page is made simply so the website looks nice. I was never a fan of handing
+                    in basic looking websites for final projects. Thank you for the opportunity to learn this skill, as web development
+                    is my job of choice once I graduate!
+                </p>
+            </div>
+        </div>
+        </div>
+</section>
+

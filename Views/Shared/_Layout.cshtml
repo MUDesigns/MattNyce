@@ -10,10 +10,10 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light border-bottom box-shadow mb-3">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light border-bottom box-shadow mb-3 fixed-top">
+            <div class="container">
                 <a asp-action="Index" class="navbar-brand" asp-controller="Home">
-                    <img src="~/images/logo_black.png" height="32" alt="MU Designs"/>
+                    <img src="~/images/logo_black.png" height="32" alt="MU Designs" />
                 </a>
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MattNyce</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -33,14 +33,14 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div container-fluid>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container-fluid">
+        <div class="container">
             &copy; 2021 - MattNyce
         </div>
     </footer>
