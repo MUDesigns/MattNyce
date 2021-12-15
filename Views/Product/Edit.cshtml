@@ -3,22 +3,29 @@
     string title = ViewBag.Action + " Product";
     ViewBag.Title = title;
 }
-<h2>@ViewBag.Title</h2>
-<form asp-action="Edit" method="post">
-    <div asp-validation-summary="All" class="text-danger"></div>
-    <div class="form-group">
-        <label asp-for="Name">Name</label>
-        <input asp-for="Name" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Price">Price</label>
-        <input asp-for="Price" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Quantity">Quantity</label>
-        <input asp-for="Quantity" class="form-control" />
-    </div>
-    <input type="hidden" asp-for="Id" />
-    <button type="submit" class="btn btn-primary">@ViewBag.Action</button>
-    <a asp-controller="Product" asp-action="Index" class="btn btn-primary">Cancel</a>
-</form>
+<style>
+    .pt-6 {
+        margin-top: 4rem;
+    }
+</style>
+<div class="container pt-6">
+    <h2>@ViewBag.Title</h2>
+    <form asp-action="Edit" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Name">Name</label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Price">Price</label>
+            <input asp-for="Price" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Quantity">Quantity</label>
+            <input asp-for="Quantity" class="form-control" />
+        </div>
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-primary">@ViewBag.Action</button>
+        <a asp-controller="Product" asp-action="Index" class="btn btn-primary">Cancel</a>
+    </form>
+</div>
